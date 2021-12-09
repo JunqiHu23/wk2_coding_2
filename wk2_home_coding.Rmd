@@ -10,7 +10,7 @@ library(tidyverse)
 library(here)
 library(sf)
 library(janitor)
-
+library(tmap)
 ```
 
 ```{r}
@@ -22,7 +22,15 @@ shape <- st_read(here::here('data',
                             'homework',
                             "Washington_Counties_with_Natural_Shoreline___washsh_area",
                             "Washington_Counties_with_Natural_Shoreline___washsh_area.shp"))
+
 ```
+```{r}
+plot(shape)
+```
+
+
+
+
 ```{r}
 county_only <- report%>%
   clean_names()%>%
