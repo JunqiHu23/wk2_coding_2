@@ -43,6 +43,7 @@ state_met <- sum(county_only$total_county_met_standard)
 state_test <- sum(county_only$total_county_to_test)
 
 state_that_met <- (state_met/state_test*100)
+#
 ```
 
 ```{r}
